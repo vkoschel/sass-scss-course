@@ -1,4 +1,9 @@
 @import "variables";
+@import "mixins";
+
+
+
+@include fancy-links;
 
 body {
   font-family: sans-serif;
@@ -10,6 +15,10 @@ h1, h2, h3, h4 {
   
 }
 
+h2 {
+  @include large-text;
+}
+
 p {
   font-family: $text-font;
   
@@ -19,7 +28,13 @@ a {
   color: $link-color;
 }
 
+.warning-button {
+  @include warning;
+  padding: 8px 12px;
+}
+
 #header {
+  @include box;
   height: $header-height;
   background-color: $theme-color;
 
