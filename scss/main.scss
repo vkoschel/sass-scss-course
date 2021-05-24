@@ -6,6 +6,16 @@
 @include google-font("Alegreya+Sans");
 @include google-font("Titillium+Web");
 
+.error {
+  color: red;
+}
+
+.critical-error {
+  @extend .error
+  bottom: 1px solid red;
+  font-weight: bold;
+}
+
 @include fancy-links;
 
 body {
@@ -42,9 +52,29 @@ a {
   }
 }
 
+%highlight {
+  font-style: italic;
+}
+
+.sub-title {
+  @extend %highlight;
+  font-size: em(20px);
+}
+
 .warning-button {
   @include warning;
   padding: 8px 12px;
+}
+
+.cta-button {
+  @extend .warning-button;
+  @include rounded;
+  font-weight: bold;
+}
+
+.super-cta-button {
+  @extend .cta-button;
+  font-size: em(20px);
 }
 
 #header {
