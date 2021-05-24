@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans);
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web);
-.error {
+.error, .critical-error {
   color: red;
 }
 
@@ -16,8 +16,9 @@ a {
 
 body {
   font-family: sans-serif;
-  color: #222222;
+  color: #fff;
   font-size: 1.125em;
+  background-color: #22222a;
 }
 
 @media only screen and (max-width: 960px) {
@@ -40,31 +41,48 @@ p {
 }
 
 a {
-  color: #f27731;
+  color: #c24721;
 }
 
 a:hover {
-  color: #f8b691;
+  color: #e58364;
 }
 
-.warning-button {
+.sub-title {
+  font-style: italic;
+}
+
+.sub-title {
+  font-size: 1.25em;
+}
+
+.warning-button, .cta-button, .super-cta-button {
   background-color: orange;
   color: #fff;
   padding: 8px 12px;
 }
 
-.warning-button:hover {
+.warning-button:hover, .cta-button:hover, .super-cta-button:hover {
   background-color: #ffc966;
+}
+
+.cta-button, .super-cta-button {
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.super-cta-button {
+  font-size: 1.25em;
 }
 
 #header {
   border-radius: 12px;
   border: 1px solid #fff;
-  box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
-  -moz-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
-  -webkit-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
+  box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
+  -moz-box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
+  -webkit-box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
   height: 60px;
-  background-color: #170a48;
+  background-color: #42424a;
 }
 
 #header #main-menu li {
@@ -120,6 +138,6 @@ a:hover {
 
 #footer {
   height: 90px;
-  background-color: #1268d8;
+  background-color: #698932;
 }
 /*# sourceMappingURL=main.css.map */

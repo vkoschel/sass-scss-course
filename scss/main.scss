@@ -11,7 +11,7 @@
 }
 
 .critical-error {
-  @extend .error
+  @extend .error;
   bottom: 1px solid red;
   font-weight: bold;
 }
@@ -22,6 +22,7 @@ body {
   font-family: sans-serif;
   color: $text-color;
   font-size: em(18px);
+  background-color: $body-background-color;
 
   @include large-screens {
     font-size: 125%;
